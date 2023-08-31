@@ -1,6 +1,5 @@
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
-import pandas as pd
 
 scope = 'https://spreadsheets.google.com/feeds'
 json = 'C:/Users/MakeBot/Desktop/test1/move_edit/autoproject-397523-25ede5dc96f7.json' # json file path
@@ -15,4 +14,5 @@ doc = gc.open_by_url(sheet_url)
 
 ws=doc.worksheet('Deep')
 ws_all = ws.get_all_values()
-print(ws_all)
+
+
